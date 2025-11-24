@@ -57,7 +57,7 @@ header nav a:hover {
 
 .overview-hero .container {
     display: grid;
-    grid-template-columns: 40% 60%; /* image left, text right */
+    grid-template-columns: 40% 60%; 
     align-items: center;
     gap: 30px;
 }
@@ -75,7 +75,7 @@ header nav a:hover {
 
 .learn-about h2 {
     font-size: 24px;
-    color: #48BB78; /* green */
+    color: #48BB78; 
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -116,7 +116,7 @@ header nav a:hover {
 
 .testing .container {
     display: grid;
-    grid-template-columns: auto 200px; /* text left, button right */
+    grid-template-columns: auto 200px; 
     align-items: center;
     gap: 20px;
 }
@@ -162,15 +162,15 @@ header nav a:hover {
 .stories article {
     display: flex;
     width: 100%;
-    align-items: stretch; /* align text with profile pic */
+    align-items: stretch; 
     gap: 20px;
     margin-bottom: 20px;
 }
 
 article img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* circular */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
     object-fit: cover;
     object-position: top;
     display: block;
@@ -189,14 +189,19 @@ article img {
 }
 
 .article-body h3 {
-    margin: 0 0 8px;
+    margin: 0 0 24px;
     font-size: 18px;
     font-weight: bold;
     color: #000;
 }
 
 .article-body p {
-    margin: 0 0 8px;
+    margin: 0 0 24px;
+}
+
+.article-body a:hover {
+  text-decoration: underline;
+  color: #434190;
 }
 
 /* Newsletter */
@@ -207,15 +212,24 @@ article img {
     padding: 30px;
 }
 
+.newsletter p {
+    max-width: 500px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+    text-align: left;
+}
+
 .newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .newsletter input {
-    padding: 10px;
-    margin-right: 10px;
+    width: 240px;
+    padding: 16px;
     border-radius: 5px;
     border: none;
 }
@@ -224,7 +238,7 @@ article img {
     background-color: #5A67D8;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 16px 40px;
     border-radius: 5px;
 }
 
@@ -232,7 +246,6 @@ article img {
     opacity: 0.9;
 }
 
-/* Newsletter Message styles */
 .error {
     color: red;
     font-weight: bold;
@@ -254,4 +267,8 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+footer .container {
+    text-align: left;
 }
